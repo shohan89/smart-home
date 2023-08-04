@@ -4,7 +4,7 @@ import Footer from './Footer';
 import { Outlet, useLoaderData } from 'react-router-dom';
 
 // creating a Context
-const ProductContext = createContext([]);
+export const ProductContext = createContext([]);
 
 const Root = () => {
   const products = useLoaderData();
