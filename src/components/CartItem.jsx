@@ -1,8 +1,7 @@
 import React from 'react'
 
-const CartItem = () => {
-  const product = {}
-  const { id, name, price, quantity, picture } = product
+const CartItem = ({ product }) => {
+  const { id, name, price, quantity, picture } = product;
   return (
     <li className='flex flex-col py-6 sm:flex-row sm:justify-between'>
       <div className='flex w-full space-x-2 sm:space-x-4'>

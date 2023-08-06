@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react'
-import { ProductContext } from './Root'
+import { CartContext, ProductContext } from './Root'
 import Product from './Product'
 import { addToDb } from '../utils/fakeDB';
 import { toast } from 'react-toastify';
@@ -8,7 +8,7 @@ const Shop = () => {
   // Getting the product through Context API
   const products = useContext( ProductContext );
   // Using a state for Cart Calculation
-  const [ cart, setCart ] = useState([]);
+  const [ cart, setCart ] = useContext( CartContext );
   console.log( cart );
 
   // Add To Cart Event Handler

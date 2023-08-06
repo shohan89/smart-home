@@ -11,7 +11,7 @@ export const CartContext = createContext([]);
 const Root = () => {
   const {products, initialCart} = useLoaderData();
   // create a state for updating the cart
-const [ cart, setCart ] = useState( initialCart );
+  const [ cart, setCart ] = useState( initialCart );
   return (
     <div>
       <ProductContext.Provider value={ products }>
